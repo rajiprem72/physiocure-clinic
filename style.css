@@ -69,7 +69,7 @@
   }
 
   .nav-menu.active {
-    height: 240px; /* expands when open */
+    height: 400px; /* expands when open */
   }
 
   .nav-toggle {
