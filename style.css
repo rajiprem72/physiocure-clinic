@@ -145,3 +145,26 @@
   }
 
 }
+
+
+
+/* ===== Desktop ===== */
+
+@media screen and (min-width:769px){
+
+    .nav-menu{
+        display:flex;
+        position:static;
+        width:auto;
+        max-height:none;
+        overflow:visible;
+        background:transparent;
+        flex-direction:row;
+        gap:20px;
+    }
+
+    .nav-toggle{
+        display:none;
+    }
+
+}
