@@ -63,15 +63,16 @@
     background-color: #0d6efd;
     flex-direction: column;
     width: 100%;
+
     height: 0;
     overflow: hidden;
+    overflow-y: auto;
+
     transition: height 0.3s ease-in-out;
-  }
-
-  .nav-menu.active {
-    height: 400px; /* expands when open */
-  }
-
+}
+.nav-menu.active {
+    height: calc(100vh - 60px);
+}
   .nav-toggle {
     display: flex;
   }
