@@ -1,0 +1,303 @@
+/* ===========================================
+   PHYSIOCURE BLOG
+   Version 1.0
+=========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f5f7fa;
+    color:#333;
+    line-height:1.7;
+}
+
+/* Header */
+
+header{
+    background:#0f766e;
+    color:white;
+    text-align:center;
+    padding:60px 20px;
+}
+
+header h1{
+    font-size:42px;
+    margin-bottom:15px;
+}
+
+header p{
+    font-size:20px;
+    opacity:.95;
+}
+
+/* Search */
+
+.search{
+    max-width:900px;
+    margin:40px auto;
+    padding:0 20px;
+}
+
+.search input{
+    width:100%;
+    padding:18px;
+    font-size:18px;
+    border:none;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+/* Sections */
+
+section{
+    padding:20px;
+}
+
+section h2{
+    text-align:center;
+    font-size:34px;
+    margin-bottom:35px;
+    color:#0f766e;
+}
+
+/* Cards */
+
+.cards{
+    max-width:1200px;
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(320px,1fr));
+
+    gap:30px;
+}
+
+/* Individual Card */
+
+article{
+
+    background:white;
+
+    border-radius:15px;
+
+    overflow:hidden;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+    transition:.3s;
+}
+
+article:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 15px 30px rgba(0,0,0,.15);
+
+}
+
+article img{
+
+    width:100%;
+
+    height:220px;
+
+    object-fit:cover;
+
+}
+
+article h3{
+
+    padding:20px 20px 10px;
+
+    font-size:28px;
+
+    color:#0f766e;
+
+}
+
+article p{
+
+    padding:0 20px 20px;
+
+    font-size:17px;
+
+}
+
+article a{
+
+    display:block;
+
+    margin:20px;
+
+    text-align:center;
+
+    text-decoration:none;
+
+    background:#0f766e;
+
+    color:white;
+
+    padding:15px;
+
+    border-radius:8px;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+article a:hover{
+
+    background:#065f46;
+
+}
+
+/* Why Read */
+
+ul{
+
+    max-width:900px;
+
+    margin:auto;
+
+    list-style:none;
+
+}
+
+ul li{
+
+    background:white;
+
+    margin-bottom:15px;
+
+    padding:18px;
+
+    border-left:5px solid #0f766e;
+
+    border-radius:8px;
+
+    font-size:18px;
+
+}
+
+/* Appointment */
+
+.appointment{
+
+    background:#0f766e;
+
+    color:white;
+
+    text-align:center;
+
+    padding:60px 20px;
+
+}
+
+.appointment h2{
+
+    color:white;
+
+    margin-bottom:20px;
+
+}
+
+.appointment p{
+
+    font-size:20px;
+
+    margin-bottom:30px;
+
+}
+
+.appointment a{
+
+    display:inline-block;
+
+    text-decoration:none;
+
+    background:white;
+
+    color:#0f766e;
+
+    padding:18px 40px;
+
+    border-radius:10px;
+
+    font-size:20px;
+
+    font-weight:bold;
+
+}
+
+.appointment a:hover{
+
+    background:#f4f4f4;
+
+}
+
+/* Footer */
+
+footer{
+
+    background:#111;
+
+    color:white;
+
+    text-align:center;
+
+    padding:25px;
+
+    font-size:16px;
+
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+header{
+
+    padding:40px 15px;
+
+}
+
+header h1{
+
+    font-size:30px;
+
+}
+
+header p{
+
+    font-size:17px;
+
+}
+
+section h2{
+
+    font-size:28px;
+
+}
+
+article h3{
+
+    font-size:24px;
+
+}
+
+.search input{
+
+    font-size:16px;
+
+}
+
+}
