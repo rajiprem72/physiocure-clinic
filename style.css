@@ -1,6 +1,6 @@
 /* ====== Navbar Styling ====== */
 .navbar {
-  background-color: #0d6efd; /* clinic blue */
+  background-color: #0f766e; /* clinic blue */
   padding: 10px 20px;
   position: sticky;
   top: 0;
@@ -37,7 +37,7 @@
 
     overflow-y:auto;
 
-    background:#0d6efd;
+    background:#0f766e;
 
     transition:max-height .3s ease;
 }
