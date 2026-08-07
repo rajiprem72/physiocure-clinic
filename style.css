@@ -1,6 +1,6 @@
 /* ====== Navbar Styling ====== */
 .navbar {
-  background-color: #0f766e; /* clinic blue */
+  background-color: #0f766e; /* clinic green */
   padding: 10px 20px;
   position: sticky;
   top: 0;
@@ -85,7 +85,7 @@
 
     width:100%;
 
-    background:#0d6efd;
+    background:#0f766e;
 
     display:flex;
     flex-direction:column;
