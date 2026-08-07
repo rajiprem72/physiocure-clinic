@@ -40,33 +40,63 @@
   </url>
 
   <url>
-    <loc>https://physiocure-clinic.com/frozen-shoulder.html</loc>
+    <loc>https://physiocure-clinic.com/blog/frozen-shoulder.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://physiocure-clinic.com/knee-pain-treatment.html</loc>
+    <loc>https://physiocure-clinic.com/blog/knee-pain-treatment.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://physiocure-clinic.com/cervical-spondylosis.html</loc>
+    <loc>https://physiocure-clinic.com/blog/cervical-spondylosis.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://physiocure-clinic.com/sciatica.html</loc>
+    <loc>https://physiocure-clinic.com/blog/sciatica.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://physiocure-clinic.com/tennis-elbow.html</loc>
+    <loc>https://physiocure-clinic.com/blog/tennis-elbow.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
+ <url>
+    <loc>https://physiocure-clinic.com/blog/low-back-pain.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://physiocure-clinic.com/blog/arthritis-treatment.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url> 
+
+ <url>
+    <loc>https://physiocure-clinic.com/blog/heel-pain-treatment.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+ <url>
+    <loc>https://physiocure-clinic.com/blog/stroke-rehabilitation.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+ <url>
+    <loc>https://physiocure-clinic.com/blog/sports-injury-rehabilitation.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
 </urlset>
