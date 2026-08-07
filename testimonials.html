@@ -16,9 +16,138 @@
     footer { background:#0f766e; color:#fff; text-align:center; padding:15px; margin-top:20px; }
     .map { margin-top:20px; }
     .btn { display:inline-block; background:#28a745; color:#fff; padding:10px 20px; border-radius:5px; text-decoration:none; }
+  /*=========================
+ Testimonials
+==========================*/
+
+.testimonials-section{
+    padding:80px 20px;
+    background:#f7fbff;
+}
+
+.testimonials-section .container{
+    max-width:1200px;
+    margin:auto;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.section-title h2{
+    font-size:38px;
+    color:#0b5ed7;
+    margin-bottom:15px;
+}
+
+.section-title p{
+    max-width:700px;
+    margin:auto;
+    color:#666;
+    line-height:1.7;
+    font-size:18px;
+}
+
+.testimonial-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(340px,1fr));
+    gap:30px;
+}
+
+.testimonial-card{
+    background:#fff;
+    padding:35px;
+    border-radius:16px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+    transition:.3s;
+    position:relative;
+}
+
+.testimonial-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 20px 40px rgba(0,0,0,.12);
+}
+
+.testimonial-card::before{
+    content:"❝";
+    font-size:80px;
+    color:#dbe9ff;
+    position:absolute;
+    top:10px;
+    left:20px;
+    line-height:1;
+}
+
+.stars{
+    color:#f4b400;
+    font-size:22px;
+    margin-bottom:20px;
+    letter-spacing:3px;
+}
+
+.review{
+    color:#555;
+    line-height:1.9;
+    font-size:16px;
+    margin-bottom:30px;
+    position:relative;
+    z-index:1;
+}
+
+.reviewer{
+    border-top:1px solid #eee;
+    padding-top:20px;
+}
+
+.reviewer h3{
+    margin:0;
+    color:#222;
+    font-size:20px;
+}
+
+.reviewer span{
+    color:#0b5ed7;
+    font-size:15px;
+    font-weight:600;
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.testimonials-section{
+    padding:60px 15px;
+}
+
+.section-title h2{
+    font-size:30px;
+}
+
+.section-title p{
+    font-size:16px;
+}
+
+.testimonial-card{
+    padding:25px;
+}
+
+.review{
+    font-size:15px;
+    line-height:1.8;
+}
+
+.reviewer h3{
+    font-size:18px;
+}
+
+}
   </style>
   <link rel="manifest" href="manifest.json">
 <meta name="theme-color" content="#2E86C1">
+
+	
+	
 
 </head>
 <body>
@@ -60,12 +189,59 @@
 	
 <p><strong>Thank you for visiting our clinic</strong><br>Your feedback helps future guests choose confidently and inspires our team to keep improving.</p>
 <p><strong>What Beneficiaries Are Saying?</strong> </p>
-<div id="reviews-widget" class="card">
-        <h3 style="margin-bottom:10px;">Live Google Reviews</h3>
-        <p class="muted" style="margin:0;">
-	<script defer async src='https://cdn.trustindex.io/loader.js?dd615a556ea2486c27765b86811'></script>
+<!-- =========================
+     Testimonials Section
+========================= -->
+<section class="testimonials-section">
+  <div class="container">
+
+    <div class="section-title">
+      <h2>What Our Patients Say</h2>
+      <p>Real experiences from patients who trusted Physiocure Clinic for their recovery.</p>
+    </div>
+
+    <div class="testimonial-grid">
+
+      <!-- Testimonial 1 -->
+      <div class="testimonial-card">
+
+        <div class="stars">
+          ★★★★★
+        </div>
+
+        <p class="review">
+          "Dr. Raji’s knowledge in physiotherapy made me feel confident about my treatment. She patiently listened to my concerns. I experienced excellent results for my back and neck pain with traction and IFT treatments. She is equipped with ultrasound therapy, wax therapy and manual therapy. Her exercises helped me regain flexibility and strength. She is approachable, empathetic and made me feel comfortable during every session. The clinic is clean, hygienic and peaceful. The option of home visits was a great relief for my elderly parents. I highly recommend Physiocure Clinic for pain relief and rehabilitation."
         </p>
- </div>
+
+        <div class="reviewer">
+          <h3>Karthika Sadatan</h3>
+          <span>★★★★★ Google Review</span>
+        </div>
+
+      </div>
+
+      <!-- Testimonial 2 -->
+      <div class="testimonial-card">
+
+        <div class="stars">
+          ★★★★★
+        </div>
+
+        <p class="review">
+          "I underwent physiotherapy treatment for severe back pain. Initially I thought surgery was the only solution, but with proper exercises, IFT therapy and traction, I recovered without surgery. I sincerely thank Dr. Raji for her effective treatment and highly recommend Physiocure Clinic."
+        </p>
+
+        <div class="reviewer">
+          <h3>Premanandhan Narayanan</h3>
+          <span>★★★★★ Google Review</span>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
 
 <p><strong>Find Us on Google Maps</strong> 
 <!-- ======= Map (Your exact embed preserved) ======= -->
