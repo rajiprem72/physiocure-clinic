@@ -197,19 +197,30 @@
 
 @media screen and (min-width:769px){
 
-    .nav-menu{
-        display:flex;
-        position:static;
-        width:auto;
-        max-height:none;
-        overflow:visible;
-        background:transparent;
-        flex-direction:row;
-        gap:20px;
+    .nav-menu {
+        display: flex;
+        position: static;
+        width: auto;
+        max-height: none;
+        overflow: visible;
+        background: transparent;
+        flex-direction: row;
+        gap: 20px;
+
+        /* Remove bullets */
+        list-style: none;
+        margin: 0;
+        padding: 0;
     }
 
-    .nav-toggle{
-        display:none;
+    .nav-menu li {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav-toggle {
+        display: none;
     }
 
 }
