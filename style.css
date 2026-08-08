@@ -15,12 +15,35 @@
   margin: auto;
 }
 
+/* =========================================
+   PHYSIOCURE CLINIC LOGO
+   FINAL FIX
+   ========================================= */
+
 .nav-logo {
-  color: white;
-  font-size: 1.3rem;
-  font-weight: bold;
-  text-decoration: none;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    width: auto !important;
+    height: 55px !important;
+    max-width: 220px !important;
+    overflow: hidden !important;
+    flex-shrink: 0 !important;
+    text-decoration: none !important;
 }
+
+.nav-logo img {
+    display: block !important;
+    width: auto !important;
+    height: 50px !important;
+    max-width: 200px !important;
+    max-height: 50px !important;
+    object-fit: contain !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+
 
 .nav-menu{
     position:absolute;
@@ -146,7 +169,24 @@
 
 }
 
+/* =========================================
+   MOBILE LOGO
+   ========================================= */
 
+@media screen and (max-width: 768px) {
+
+    .nav-logo {
+        height: 48px !important;
+        max-width: 180px !important;
+    }
+
+    .nav-logo img {
+        height: 43px !important;
+        max-width: 170px !important;
+        max-height: 43px !important;
+    }
+
+}
 
 /* ===== Desktop ===== */
 
