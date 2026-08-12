@@ -298,13 +298,13 @@ body {
         width: 100%;
         max-width: 100%;
         height: 210px;
-    }
+    }co
 
     .clinical-service-image img {
         width: 100%;
         max-width: 100%;
         height: 100%;
-        object-fit: cover;
+        object-fit: contain;
     }
 
     .clinical-service-content {
@@ -427,7 +427,7 @@ body {
 
     height: 100%;
 
-    object-fit: cover;
+    object-fit: contain;
 
     box-sizing: border-box;
 
@@ -573,7 +573,7 @@ body {
 
         height: 100%;
 
-        object-fit: cover;
+        object-fit: contain;
 
     }
 
