@@ -1,0 +1,296 @@
+/* =====================================================
+   CLINICAL SERVICES
+   ===================================================== */
+
+.clinical-services {
+
+    padding: 80px 6%;
+
+    background: #f5f9f8;
+
+}
+
+
+.services-heading {
+
+    max-width: 850px;
+
+    margin: 0 auto 55px;
+
+    text-align: center;
+
+}
+
+
+.services-eyebrow {
+
+    display: inline-block;
+
+    color: #117c72;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+
+    margin-bottom: 12px;
+
+}
+
+
+.services-heading h2 {
+
+    margin: 0 0 18px;
+
+    color: #123c5a;
+
+    font-size: clamp(30px, 4vw, 44px);
+
+}
+
+
+.services-heading p {
+
+    margin: 0;
+
+    color: #555;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+
+}
+
+
+/* =====================================================
+   GRID
+   ===================================================== */
+
+.clinical-services-grid {
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 30px;
+
+}
+
+
+/* =====================================================
+   CARD
+   ===================================================== */
+
+.clinical-service-card {
+
+    background: #ffffff;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    border: 1px solid #e2ecea;
+
+    box-shadow:
+        0 5px 18px rgba(0,0,0,0.06);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+
+}
+
+
+.clinical-service-card:hover {
+
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 14px 32px rgba(0,0,0,0.12);
+
+}
+
+
+/* =====================================================
+   IMAGE HOLDER
+   ===================================================== */
+
+.clinical-service-image {
+
+    width: 100%;
+
+    height: 240px;
+
+    background: #e8f2f0;
+
+    overflow: hidden;
+
+}
+
+
+.clinical-service-image img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition:
+        transform 0.4s ease;
+
+}
+
+
+.clinical-service-card:hover
+.clinical-service-image img {
+
+    transform: scale(1.04);
+
+}
+
+
+/* =====================================================
+   CONTENT
+   ===================================================== */
+
+.clinical-service-content {
+
+    padding: 30px;
+
+    position: relative;
+
+}
+
+
+.clinical-service-icon {
+
+    width: 55px;
+
+    height: 55px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 14px;
+
+    background: #e7f4f1;
+
+    color: #117c72;
+
+    font-size: 24px;
+
+    margin-bottom: 18px;
+
+}
+
+
+.clinical-service-content h3 {
+
+    margin: 0 0 12px;
+
+    color: #123c5a;
+
+    font-size: 25px;
+
+}
+
+
+.clinical-service-content p {
+
+    margin: 0 0 20px;
+
+    color: #555;
+
+    font-size: 16px;
+
+    line-height: 1.75;
+
+}
+
+
+.clinical-service-content a {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    color: #117c72;
+
+    font-weight: 700;
+
+    text-decoration: none;
+
+}
+
+
+.clinical-service-content a:hover {
+
+    text-decoration: underline;
+
+}
+
+
+/* =====================================================
+   MOBILE
+   ===================================================== */
+
+@media (max-width: 700px) {
+
+    .clinical-services {
+
+        padding: 55px 20px;
+
+    }
+
+
+    .clinical-services-grid {
+
+        grid-template-columns: 1fr;
+
+        gap: 25px;
+
+    }
+
+
+    .clinical-service-image {
+
+        height: 210px;
+
+    }
+
+
+    .clinical-service-content {
+
+        padding: 25px 22px;
+
+    }
+
+
+    .clinical-service-content h3 {
+
+        font-size: 22px;
+
+    }
+
+
+    .clinical-service-content p {
+
+        font-size: 16px;
+
+    }
+
+}
