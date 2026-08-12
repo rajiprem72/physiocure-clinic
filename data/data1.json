@@ -1,0 +1,86 @@
+
+[
+  {
+    "id": 1,
+    "name": "Physiocure Clinic",
+    "type": "Physiotherapy Center",
+    "address": "#26/15B, 2nd Floor, Periyar Main Road, Sreenivasa Nagar, Padi",
+    "city": "Chennai",
+    "district": "Chennai",
+    "state": "Tamil Nadu",
+    "pincode": "600050",
+    "country": "India",
+    "phone": ["+91 98844 86607"],
+    "email": "rajipremanandhan@gmail.com",
+    "website": "https://physiocure-clinic.com",
+    "latitude": 13.092649685840323, 
+    "longitude": 80.1812342049362
+  },
+ {
+    "id": 2,
+    "name": "ARUN PHYSIO CARE AND REHAB CLINIC",
+    "type": "Physiotherapy Center",
+    "address": "22/50, 1st Main Rd, Sathya Nagar, Padi",
+    "city": "Chennai",
+    "district": "Chennai",
+    "state": "Tamil Nadu",
+    "pincode": "600050",
+    "country": "India",
+    "phone": [""],
+    "email": "",
+    "website": "",
+    "latitude": 13.092846123578004, 
+    "longitude": 80.1775179
+  },
+{
+    "id": 3,
+    "name": "EL ROI Physio Care",
+    "type": "Physiotherapy Center",
+    "address": "No.B3, Shop, 13/15, Moorthy Nagar Main Rd,Padi",
+    "city": "Chennai",
+    "district": "Chennai",
+    "state": "Tamil Nadu",
+    "pincode": "600050",
+    "country": "India",
+    "phone": ["+91 97106 11924"],
+    "email": "",
+    "website": "",
+    "latitude": 13.091994036584646,  
+    "longitude": 80.18527930732071
+  },
+{
+    "id": 4,
+    "name": "KEERTHI PHYSIOTHERAPY CLINIC",
+    "type": "Physiotherapy Center",
+    "address": "6A, Officers Colony Main Road, Padi",
+    "city": "Chennai",
+    "district": "Chennai",
+    "state": "Tamil Nadu",
+    "pincode": "600050",
+    "country": "India",
+    "phone": ["+91 86674 74483"],
+    "email": "",
+    "website": "",
+    "latitude": 13.091516237091765, 
+    "longitude": 80.18440056499247
+  },
+{
+    "id": 5,
+    "name": "VELCARE ACTIVE LIFE PHYSIOTHERAPY AND MULTIREHABILITATION CENTRE",
+    "type": "Physiotherapy Center",
+    "address": "21/14B, Kamarajar 1st Cross St, Srinivasa Nagar",
+    "city": "Chennai",
+    "district": "Chennai",
+    "state": "Tamil Nadu",
+    "pincode": "600050",
+    "country": "India",
+    "phone": ["+91 89393 88429, +91 63811 63587"],
+    "email": "bkeerthi606@gmail.com",
+    "website": "https://www.velcareactivelifephysio.com/",
+    "latitude": 13.091516237091765, 
+    "longitude": 80.18440056499247
+  }
+
+]
+
+
