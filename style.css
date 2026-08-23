@@ -427,60 +427,79 @@
 
 }
 
-
 /* =====================================================
-   PORTRAIT VIDEO - 9:16
-   Used for Intro Video & Location Video
+   PHYSIOCURE 9:16 VIDEOS
+   Used for intro.mp4 and location.mp4
    ===================================================== */
+
+/* Common video sections */
 
 .intro-video-section,
 .location-video-section {
     width: 100%;
-    padding: 30px 20px;
+    padding: 35px 20px;
     box-sizing: border-box;
     overflow: hidden;
-    background: #ffffff;
 }
+
+
+/* Common containers */
 
 .intro-video-container,
 .location-video-container {
     width: 100%;
-    max-width: 900px;
+    max-width: 1000px;
     margin: 0 auto;
     text-align: center;
     box-sizing: border-box;
 }
 
 
-/* Video wrapper */
+/* Common video wrappers */
 
 .intro-video-wrapper,
 .location-video-wrapper {
     width: 100%;
-    max-width: 500px;
-    margin: 20px auto 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     overflow: hidden;
-    border-radius: 14px;
-    background: #000;
-    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
 }
 
 
-/* 9:16 video */
+/* =====================================================
+   DESKTOP - KEEP COMPLETE 9:16 VIDEO VISIBLE
+   ===================================================== */
 
 .intro-video,
 .location-video {
     display: block;
-    width: 100%;
-    height: auto;
+
+    /* Control height instead of width */
+    height: 70vh;
+
+    /* Width calculated automatically from 9:16 ratio */
+    width: auto;
+
+    /* Safety limits */
+    max-height: 70vh;
+    max-width: 100%;
+
     aspect-ratio: 9 / 16;
+
     object-fit: contain;
+
     background: #000;
+
+    border-radius: 14px;
+
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
 
 
 /* =====================================================
    MOBILE
+   KEEP YOUR EXISTING MOBILE CSS UNCHANGED
    ===================================================== */
 
 @media (max-width: 600px) {
@@ -490,19 +509,33 @@
         padding: 25px 12px;
     }
 
+    .intro-video-container,
+    .location-video-container {
+        width: 100%;
+    }
+
     .intro-video-wrapper,
     .location-video-wrapper {
         width: 100%;
-        max-width: 100%;
-        margin-top: 15px;
-        border-radius: 10px;
     }
 
     .intro-video,
     .location-video {
+
+        /* YOUR CURRENT WORKING MOBILE SETTINGS */
         width: 100%;
         height: auto;
+
+        max-width: 100%;
+        max-height: none;
+
         aspect-ratio: 9 / 16;
+
+        object-fit: contain;
+
+        border-radius: 10px;
     }
 
 }
+
+
