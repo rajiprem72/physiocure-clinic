@@ -428,34 +428,19 @@
 }
 
 /* =====================================================
-   PHYSIOCURE 9:16 VIDEOS
-   Used for intro.mp4 and location.mp4
+   PHYSIOCURE VIDEOS - 9:16
+   INTRO + LOCATION
    ===================================================== */
-
-/* Common video sections */
 
 .intro-video-section,
 .location-video-section {
     width: 100%;
-    padding: 35px 20px;
     box-sizing: border-box;
     overflow: hidden;
 }
 
 
-/* Common containers */
-
-.intro-video-container,
-.location-video-container {
-    width: 100%;
-    max-width: 1000px;
-    margin: 0 auto;
-    text-align: center;
-    box-sizing: border-box;
-}
-
-
-/* Common video wrappers */
+/* Video containers */
 
 .intro-video-wrapper,
 .location-video-wrapper {
@@ -463,39 +448,72 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
+    box-sizing: border-box;
 }
 
 
 /* =====================================================
-   DESKTOP - KEEP COMPLETE 9:16 VIDEO VISIBLE
+   DESKTOP
+   FORCE 9:16 PORTRAIT FRAME
    ===================================================== */
 
-.intro-video,
-.location-video {
-    display: block;
+@media (min-width: 601px) {
 
-    /* Control height instead of width */
-    height: 70vh;
+    .intro-video,
+    .location-video {
 
-    /* Width calculated automatically from 9:16 ratio */
-    width: auto;
+        /* FORCE the video to be portrait */
+        width: calc(70vh * 9 / 16) !important;
+        height: 70vh !important;
 
-    /* Safety limits */
-    max-height: 70vh;
-    max-width: 100%;
+        /* Never allow it to become wider */
+        max-width: calc(100vw - 40px) !important;
+        max-height: 70vh !important;
 
-    aspect-ratio: 9 / 16;
+        aspect-ratio: 9 / 16 !important;
 
-    object-fit: contain;
+        display: block !important;
 
-    background: #000;
+        object-fit: contain !important;
 
-    border-radius: 14px;
+        background: #000;
 
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+        border-radius: 14px;
+
+        margin: 0 auto;
+
+        box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+
+        box-sizing: border-box;
+    }
+
 }
 
+
+/* =====================================================
+   MOBILE
+   KEEP YOUR WORKING MOBILE VERSION
+   ===================================================== */
+
+@media (max-width: 600px) {
+
+    .intro-video,
+    .location-video {
+
+        width: 100%;
+        height: auto;
+
+        max-width: 100%;
+        max-height: none;
+
+        aspect-ratio: 9 / 16;
+
+        object-fit: contain;
+
+        border-radius: 10px;
+    }
+
+}
 
 /* =====================================================
    MOBILE
@@ -537,5 +555,3 @@
     }
 
 }
-
-
