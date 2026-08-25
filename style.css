@@ -555,3 +555,379 @@
     }
 
 }
+
+
+
+
+
+
+/* =========================================================
+   ONLINE APPOINTMENT PAGE
+   ========================================================= */
+
+.online-appointment-section {
+    width: 100%;
+    padding: 60px 20px;
+    background: #f5f9f8;
+    box-sizing: border-box;
+}
+
+.online-appointment-container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+.appointment-header {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.appointment-header h1 {
+    color: #123c5a;
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.appointment-header p {
+    color: #555;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   CARDS
+   ========================================================= */
+
+.appointment-payment-card,
+.appointment-form-card {
+    background: #ffffff;
+    padding: 35px;
+    margin-bottom: 30px;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    box-sizing: border-box;
+}
+
+.appointment-payment-card h2,
+.appointment-form-card h2 {
+    color: #127c73;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+
+/* =========================================================
+   QR CODE
+   ========================================================= */
+
+.payment-qr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 25px 0;
+}
+
+.payment-qr img {
+    display: block;
+    width: 280px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+}
+
+.payment-note {
+    text-align: center;
+    color: #555;
+    line-height: 1.6;
+}
+
+.payment-note strong {
+    color: #127c73;
+}
+
+
+/* =========================================================
+   FORM
+   ========================================================= */
+
+.appointment-form-group {
+    margin-bottom: 22px;
+}
+
+.appointment-form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #123c5a;
+}
+
+.appointment-form-group label span {
+    color: #d62828;
+}
+
+.optional-text {
+    color: #777 !important;
+    font-weight: normal !important;
+}
+
+.appointment-form-group input[type="text"],
+.appointment-form-group input[type="email"],
+.appointment-form-group input[type="tel"],
+.appointment-form-group input[type="file"],
+.appointment-form-group textarea {
+    width: 100%;
+    padding: 13px 15px;
+    border: 1px solid #ccd6d5;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: inherit;
+    box-sizing: border-box;
+}
+
+.appointment-form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.appointment-form-group input:focus,
+.appointment-form-group textarea:focus {
+    outline: none;
+    border-color: #127c73;
+    box-shadow: 0 0 0 3px rgba(18,124,115,0.12);
+}
+
+
+/* =========================================================
+   SLOT SELECTION
+   ========================================================= */
+
+.slot-note {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.appointment-slots {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+.slot-option {
+    flex: 1;
+    min-width: 150px;
+    cursor: pointer;
+}
+
+.slot-option input {
+    display: none;
+}
+
+.slot-option span {
+    display: block;
+    padding: 15px;
+    text-align: center;
+    border: 2px solid #d7e0df;
+    border-radius: 10px;
+    background: #fff;
+    color: #123c5a;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.slot-option input:checked + span {
+    background: #127c73;
+    border-color: #127c73;
+    color: #fff;
+}
+
+
+/* =========================================================
+   UPLOAD INFORMATION
+   ========================================================= */
+
+.upload-note,
+.upload-limit {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.upload-limit {
+    margin-top: 5px;
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   RULES
+   ========================================================= */
+
+.appointment-rules {
+    margin-top: 35px;
+    padding: 25px;
+    background: #f1f7f6;
+    border-left: 5px solid #127c73;
+    border-radius: 8px;
+}
+
+.appointment-rules h2 {
+    margin-bottom: 15px;
+}
+
+.appointment-rules ol {
+    padding-left: 25px;
+    margin-bottom: 0;
+}
+
+.appointment-rules li {
+    margin-bottom: 12px;
+    color: #444;
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   CONSENT
+   ========================================================= */
+
+.appointment-consent {
+    margin: 25px 0;
+    padding: 15px;
+    background: #fff8e8;
+    border-radius: 8px;
+}
+
+.appointment-consent label {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    color: #444;
+    line-height: 1.5;
+    cursor: pointer;
+}
+
+.appointment-consent input {
+    margin-top: 4px;
+}
+
+
+/* =========================================================
+   SUBMIT BUTTON
+   ========================================================= */
+
+.online-appointment-submit {
+    display: block;
+    width: 100%;
+    padding: 16px 20px;
+    border: none;
+    border-radius: 10px;
+    background: #127c73;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.online-appointment-submit:hover {
+    background: #0e675f;
+    transform: translateY(-1px);
+}
+
+.online-appointment-submit i {
+    margin-right: 8px;
+}
+
+
+/* =========================================================
+   STATUS MESSAGE
+   ========================================================= */
+
+.appointment-status {
+    margin-top: 20px;
+    text-align: center;
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   NOTICE
+   ========================================================= */
+
+.appointment-notice {
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
+    padding: 20px;
+    background: #eaf4f3;
+    border-radius: 10px;
+    color: #345;
+}
+
+.appointment-notice i {
+    color: #127c73;
+    font-size: 22px;
+    margin-top: 3px;
+}
+
+.appointment-notice p {
+    margin: 0;
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .online-appointment-section {
+        padding: 35px 12px;
+    }
+
+    .appointment-header h1 {
+        font-size: 30px;
+        line-height: 1.3;
+    }
+
+    .appointment-header p {
+        font-size: 16px;
+    }
+
+    .appointment-payment-card,
+    .appointment-form-card {
+        padding: 22px 18px;
+        border-radius: 12px;
+    }
+
+    .payment-qr img {
+        width: 240px;
+    }
+
+    .appointment-slots {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .slot-option {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .appointment-notice {
+        padding: 16px;
+    }
+
+}
+
