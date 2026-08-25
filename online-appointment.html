@@ -112,10 +112,414 @@
     <p>Consultant Physiotherapist - S.R. Raji (23 years of experience)</p>
   </header>
 
-<section id="about" style="padding:20px; line-height:1.6;">
-  <h1>Online Appointment</h1>
+  <!-- =========================================================
+     ONLINE APPOINTMENT
+     ========================================================= -->
 
-  <h2>Under Construction</h2>
+<section class="online-appointment-section">
+
+    <div class="online-appointment-container">
+
+        <!-- Page Heading -->
+
+        <div class="appointment-header">
+
+            <h1>
+                Online Physiotherapy Appointment
+            </h1>
+
+            <p>
+                Book a 30–45 minute online physiotherapy consultation
+                with PhysioCure Clinic.
+            </p>
+
+        </div>
+
+
+        <!-- =================================================
+             PAYMENT
+             ================================================= -->
+
+        <div class="appointment-payment-card">
+
+            <h2>
+                Step 1 – Pay ₹500 for Your Online Appointment
+            </h2>
+
+            <p>
+                Please scan the Google Pay QR code below and complete
+                the payment of <strong>₹500</strong>.
+            </p>
+
+            <div class="payment-qr">
+
+                <img
+                    src="images/qr-code.jpg"
+                    alt="Google Pay QR Code for PhysioCure Clinic Online Appointment"
+                    loading="lazy">
+
+            </div>
+
+            <p class="payment-note">
+                After completing the payment, please enter your
+                payment reference / transaction number in the form below.
+            </p>
+
+        </div>
+
+
+        <!-- =================================================
+             APPOINTMENT FORM
+             ================================================= -->
+
+        <div class="appointment-form-card">
+
+            <h2>
+                Step 2 – Enter Your Details
+            </h2>
+
+            <form id="onlineAppointmentForm">
+
+                <!-- Name -->
+
+                <div class="appointment-form-group">
+
+                    <label for="patientName">
+                        Name <span>*</span>
+                    </label>
+
+                    <input
+                        type="text"
+                        id="patientName"
+                        name="patientName"
+                        placeholder="Enter your full name"
+                        required>
+
+                </div>
+
+
+                <!-- Email -->
+
+                <div class="appointment-form-group">
+
+                    <label for="patientEmail">
+                        Email ID <span>*</span>
+                    </label>
+
+                    <input
+                        type="email"
+                        id="patientEmail"
+                        name="patientEmail"
+                        placeholder="Enter your email address"
+                        required>
+
+                </div>
+
+
+                <!-- WhatsApp -->
+
+                <div class="appointment-form-group">
+
+                    <label for="patientWhatsapp">
+                        WhatsApp Number <span>*</span>
+                    </label>
+
+                    <input
+                        type="tel"
+                        id="patientWhatsapp"
+                        name="patientWhatsapp"
+                        placeholder="Enter your WhatsApp number"
+                        required>
+
+                </div>
+
+
+                <!-- Country -->
+
+                <div class="appointment-form-group">
+
+                    <label for="patientCountry">
+                        Country <span>*</span>
+                    </label>
+
+                    <input
+                        type="text"
+                        id="patientCountry"
+                        name="patientCountry"
+                        placeholder="Enter your country"
+                        required>
+
+                </div>
+
+
+                <!-- Problem -->
+
+                <div class="appointment-form-group">
+
+                    <label for="patientProblem">
+                        Physiotherapy Problem / Reason for Consultation
+                        <span>*</span>
+                    </label>
+
+                    <textarea
+                        id="patientProblem"
+                        name="patientProblem"
+                        rows="5"
+                        placeholder="Briefly describe your physiotherapy problem"
+                        required></textarea>
+
+                </div>
+
+
+                <!-- Payment Reference -->
+
+                <div class="appointment-form-group">
+
+                    <label for="paymentReference">
+                        Google Pay Payment Reference / Transaction ID
+                        <span>*</span>
+                    </label>
+
+                    <input
+                        type="text"
+                        id="paymentReference"
+                        name="paymentReference"
+                        placeholder="Enter your payment reference number"
+                        required>
+
+                </div>
+
+
+                <!-- Preferred Slot -->
+
+                <div class="appointment-form-group">
+
+                    <label>
+                        Preferred Online Appointment Slot
+                        <span>*</span>
+                    </label>
+
+                    <p class="slot-note">
+                        You may choose a preferred slot for the next day.
+                        The final date and time will be confirmed by
+                        PhysioCure Clinic.
+                    </p>
+
+                    <div class="appointment-slots">
+
+                        <label class="slot-option">
+
+                            <input
+                                type="radio"
+                                name="preferredSlot"
+                                value="10:00 AM"
+                                required>
+
+                            <span>10:00 AM</span>
+
+                        </label>
+
+
+                        <label class="slot-option">
+
+                            <input
+                                type="radio"
+                                name="preferredSlot"
+                                value="11:00 AM">
+
+                            <span>11:00 AM</span>
+
+                        </label>
+
+
+                        <label class="slot-option">
+
+                            <input
+                                type="radio"
+                                name="preferredSlot"
+                                value="12:00 PM">
+
+                            <span>12:00 PM</span>
+
+                        </label>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Medical Report -->
+
+                <div class="appointment-form-group">
+
+                    <label for="medicalReport">
+                        Medical Reports
+                        <span class="optional-text">(Optional)</span>
+                    </label>
+
+                    <input
+                        type="file"
+                        id="medicalReport"
+                        name="medicalReport"
+                        accept=".pdf,.jpg,.jpeg,.png">
+
+                    <p class="upload-note">
+                        You may upload relevant medical reports,
+                        prescriptions, scan reports or other documents
+                        that may help the physiotherapist understand
+                        your condition.
+                    </p>
+
+                    <p class="upload-limit">
+                        Maximum file size: 5 MB.
+                    </p>
+
+                </div>
+
+
+                <!-- Rules -->
+
+                <div class="appointment-rules">
+
+                    <h2>
+                        Rules &amp; Regulations
+                    </h2>
+
+                    <ol>
+
+                        <li>
+                            The online session will be for
+                            <strong>30 to 45 minutes</strong>.
+                        </li>
+
+                        <li>
+                            The online appointment fee is
+                            <strong>₹500</strong>.
+                        </li>
+
+                        <li>
+                            The user should ask questions pertaining
+                            to physiotherapy queries only.
+                        </li>
+
+                        <li>
+                            The consultation should be regarding
+                            the user's own problem and not the medical
+                            issues of other family members.
+                        </li>
+
+                        <li>
+                            The online appointment fee is
+                            <strong>non-refundable</strong>.
+                        </li>
+
+                        <li>
+                            The user may choose a preferred slot of
+                            <strong>10:00 AM, 11:00 AM or 12:00 PM</strong>
+                            on the next day after booking.
+                        </li>
+
+                        <li>
+                            Raji S.R. or a member of the PhysioCure
+                            physiotherapy team will confirm the exact
+                            appointment timing.
+                        </li>
+
+                        <li>
+                            The final date and time will be confirmed
+                            with the consent of both parties.
+                        </li>
+
+                        <li>
+                            The online session will be conducted through
+                            <strong>Google Meet or Zoom</strong>, as
+                            mutually decided by both parties.
+                        </li>
+
+                        <li>
+                            Please keep your relevant medical records
+                            handy during the online consultation.
+                        </li>
+
+                        <li>
+                            Depending upon the medical condition,
+                            the patient may be advised to visit the
+                            clinic or consider a home physiotherapy visit.
+                        </li>
+
+                        <li>
+                            PhysioCure Clinic wishes you a
+                            <strong>speedy recovery.</strong>
+                        </li>
+
+                    </ol>
+
+                </div>
+
+
+                <!-- Consent -->
+
+                <div class="appointment-consent">
+
+                    <label>
+
+                        <input
+                            type="checkbox"
+                            id="appointmentConsent"
+                            required>
+
+                        I have read and understood the above
+                        Rules &amp; Regulations and agree to them.
+
+                    </label>
+
+                </div>
+
+
+                <!-- Submit -->
+
+                <button
+                    type="submit"
+                    class="online-appointment-submit">
+
+                    <i class="fas fa-calendar-check"></i>
+
+                    Register for Online Appointment
+
+                </button>
+
+
+                <!-- Status -->
+
+                <div
+                    id="appointmentStatus"
+                    class="appointment-status">
+                </div>
+
+            </form>
+
+        </div>
+
+
+        <!-- =================================================
+             IMPORTANT NOTICE
+             ================================================= -->
+
+        <div class="appointment-notice">
+
+            <i class="fas fa-info-circle"></i>
+
+            <p>
+                Your appointment is not considered confirmed immediately
+                after submitting this form. PhysioCure Clinic will verify
+                the payment and contact you to confirm the final date
+                and time.
+            </p>
+
+        </div>
+
+    </div>
+
 </section>
 
   <footer>
