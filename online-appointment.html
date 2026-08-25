@@ -914,5 +914,244 @@ document.addEventListener("DOMContentLoaded", function () {
 </script>
   
 <script src="js/script.js"></script>  
+<script>
+
+const APPOINTMENT_SCRIPT_URL =
+    "PUT_YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL_HERE";
+
+
+document
+    .getElementById("onlineAppointmentForm")
+    .addEventListener("submit", async function(event) {
+
+        event.preventDefault();
+
+
+        const status =
+            document.getElementById("appointmentStatus");
+
+        const submitButton =
+            document.querySelector(
+                ".online-appointment-submit"
+            );
+
+
+        const fileInput =
+            document.getElementById("medicalReport");
+
+
+        submitButton.disabled = true;
+
+        submitButton.innerHTML =
+            '<i class="fas fa-spinner fa-spin"></i> Submitting...';
+
+
+        status.textContent =
+            "Please wait while your appointment registration is being submitted.";
+
+
+        try {
+
+            let reportData = "";
+            let reportName = "";
+            let reportType = "";
+
+
+            /* =============================================
+               OPTIONAL MEDICAL REPORT
+               ============================================= */
+
+            if (fileInput.files.length > 0) {
+
+                const file = fileInput.files[0];
+
+
+                /* Maximum 5 MB */
+
+                if (file.size > 5 * 1024 * 1024) {
+
+                    throw new Error(
+                        "Medical report must be smaller than 5 MB."
+                    );
+
+                }
+
+
+                reportName = file.name;
+
+                reportType = file.type;
+
+
+                reportData =
+                    await convertFileToBase64(file);
+
+            }
+
+
+            /* =============================================
+               COLLECT FORM DATA
+               ============================================= */
+
+            const data = {
+
+                patientName:
+                    document.getElementById(
+                        "patientName"
+                    ).value.trim(),
+
+                patientEmail:
+                    document.getElementById(
+                        "patientEmail"
+                    ).value.trim(),
+
+                patientWhatsapp:
+                    document.getElementById(
+                        "patientWhatsapp"
+                    ).value.trim(),
+
+                patientCountry:
+                    document.getElementById(
+                        "patientCountry"
+                    ).value.trim(),
+
+                patientProblem:
+                    document.getElementById(
+                        "patientProblem"
+                    ).value.trim(),
+
+                paymentReference:
+                    document.getElementById(
+                        "paymentReference"
+                    ).value.trim(),
+
+                preferredSlot:
+                    document.querySelector(
+                        'input[name="preferredSlot"]:checked'
+                    ).value,
+
+                reportData: reportData,
+
+                reportName: reportName,
+
+                reportType: reportType
+
+            };
+
+
+            /* =============================================
+               SEND TO GOOGLE APPS SCRIPT
+               ============================================= */
+
+            await fetch(
+                APPOINTMENT_SCRIPT_URL,
+                {
+
+                    method: "POST",
+
+                    mode: "no-cors",
+
+                    headers: {
+
+                        "Content-Type":
+                            "text/plain;charset=utf-8"
+
+                    },
+
+                    body: JSON.stringify(data)
+
+                }
+            );
+
+
+            /* =============================================
+               SUCCESS
+               ============================================= */
+
+            status.innerHTML =
+                "Thank you. Your online appointment registration has been received. " +
+                "PhysioCure Clinic will verify your ₹500 payment and contact you " +
+                "to confirm the final appointment date and time.";
+
+
+            status.style.color = "#127c73";
+
+
+            document
+                .getElementById("onlineAppointmentForm")
+                .reset();
+
+
+            submitButton.disabled = false;
+
+            submitButton.innerHTML =
+                '<i class="fas fa-calendar-check"></i> ' +
+                'Register for Online Appointment';
+
+
+        } catch (error) {
+
+            console.error(error);
+
+
+            status.textContent =
+                error.message ||
+                "Something went wrong. Please try again or contact PhysioCure Clinic.";
+
+
+            status.style.color = "#c62828";
+
+
+            submitButton.disabled = false;
+
+            submitButton.innerHTML =
+                '<i class="fas fa-calendar-check"></i> ' +
+                'Register for Online Appointment';
+
+        }
+
+    });
+
+
+
+/* =========================================================
+   FILE → BASE64
+   ========================================================= */
+
+function convertFileToBase64(file) {
+
+    return new Promise(function(resolve, reject) {
+
+        const reader =
+            new FileReader();
+
+
+        reader.onload = function() {
+
+            const result =
+                reader.result;
+
+            const base64 =
+                result.split(",")[1];
+
+            resolve(base64);
+
+        };
+
+
+        reader.onerror = function(error) {
+
+            reject(error);
+
+        };
+
+
+        reader.readAsDataURL(file);
+
+    });
+
+}
+
+</script>
+  
 </body>
 </html>
